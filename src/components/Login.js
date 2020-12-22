@@ -22,7 +22,7 @@ class Login extends Component {
     }
     this.props.context.login(username, password).then((loggedIn) => {
       if (!loggedIn) {
-        this.setState({ error: "Invalid Credentials Sorry" });
+        this.setState({ error: "Invalid Credentials" });
       }
     });
   };
